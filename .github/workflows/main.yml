@@ -25,6 +25,7 @@ jobs:
         script: |
           cd /home/GitHub/color-my-toys
           git pull origin develop &&
+          docker stop color-my-toys-front-end-container || true
           docker rm color-my-toys-front-end-container || true
           docker rmi color-my-toys-front-end-image || true
           docker build --no-cache -t color-my-toys-front-end-image .
