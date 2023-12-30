@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle` 
   html, body, #root {
-
+    height: 100%;
     background-color: #FFFFFF;
     color: #000000;
     font-weight: 400;

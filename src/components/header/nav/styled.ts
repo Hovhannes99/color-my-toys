@@ -16,10 +16,14 @@ export const NavWrapper = styled.div`
    display: flex;
    column-gap: 1.5rem;
    padding-left: 10%;
+   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
+      display: none;
+   }
 `
 
 export const NavLink = styled(N)<ButtonType>`
    color: ${({ theme }) => theme.palette.neutral[8]};
+   white-space: nowrap;
    ${({ theme }) => theme.customTypography.semibold[10]};
    text-align: center;
    padding: 0 .5rem;

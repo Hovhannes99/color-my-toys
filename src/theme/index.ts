@@ -52,7 +52,8 @@ const customTypography: TTypography = FONT_STYLES.reduce(
 
 export const styledTheme: DefaultTheme = {
   breakpoints: {
-    sm: '(max-width: 700px)',
+    sm: '(max-width: 750px)',
+    smMin: '(min-width: 750px)',
     md: '(min-width: 0px)',
     lg: '(min-width: 1920px)',
   },
@@ -71,7 +72,7 @@ export const styledTheme: DefaultTheme = {
       5: '#6A7484',
       6: '#525A67',
       7: '#848588',
-      8: '#333B48',
+      8: '#505050',
       9: '#29313E',
       10: '#1F2630',
       11: '#181D20',

@@ -1,7 +1,8 @@
-import {Container, Logo, NavWrapper} from "./styled.ts";
-import   logo from "@/assets/icons/logo.svg"
+import {Container, NavWrapper} from "./styled.ts";
 import Nav from "../header/nav/index.tsx";
 import {useNavigate} from "react-router-dom";
+import MenuNav from "@/components/header/menu";
+import {Logo} from "@/kit/logo/styled.ts";
 
 const Header = () => {
     const navigate  = useNavigate();
@@ -9,9 +10,10 @@ const Header = () => {
      return (
          <Container>
             <NavWrapper>
-                 <Logo src={logo} alt={"logo"} onClick={()=>navigate('/')}/>
+                 <Logo alt={"logo"} onClick={()=>navigate('/')}/>
                  <Nav/>
              </NavWrapper>
+             <MenuNav/>
          </Container>
      )
 }

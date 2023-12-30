@@ -1,12 +1,12 @@
-import  {useState, MouseEvent} from "react";
-
+import {useState, MouseEvent} from "react";
 import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import Logout from "@mui/icons-material/Logout";
+import {Box} from "@mui/material";
+import {MenuItem} from "@/kit/menu/styed.ts";
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 
 
 const AccountMenu = () => {
@@ -20,35 +20,38 @@ const AccountMenu = () => {
     };
     return (
         <>
-            <div style={{ display: "flex", alignItems: "center", textAlign: "center" }}>
+            <Box sx={{display: "flex", alignItems: "center", textAlign: "center"}}>
                 <Tooltip title="Account settings">
-                    <IconButton
-                        onClick={handleClick}
-                        size="small"
-                        sx={{ ml: 2 }}
-                        aria-controls={open ? "account-menu" : undefined}
-                        aria-haspopup="true"
-                        aria-expanded={open ? "true" : undefined}
-                    >
-                        <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
-                    </IconButton>
+                    <>
+                        Mike
+                        <IconButton
+                            onClick={handleClick}
+                            size="small"
+                            sx={{ml: 2}}
+                            aria-controls={open ? "account-menu" : undefined}
+                            aria-haspopup="true"
+                            aria-expanded={open ? "true" : undefined}
+                        >
+                            <Avatar sx={{width: 47, height: 47, backgroundColor: "#2D949D"}}>M</Avatar>
+                        </IconButton>
+                    </>
                 </Tooltip>
-            </div>
+            </Box>
             <Menu
                 anchorEl={anchorEl}
                 id="account-menu"
                 open={open}
                 onClose={handleClose}
                 onClick={handleClose}
-                transformOrigin={{ horizontal: "right", vertical: "top" }}
-                anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+                transformOrigin={{horizontal: "right", vertical: "top"}}
+                anchorOrigin={{horizontal: "right", vertical: "bottom"}}
             >
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-
                 <MenuItem onClick={handleClose}>
-                    <ListItemIcon>
-                        <Logout fontSize="small" />
-                    </ListItemIcon>
+                        <AssignmentIndIcon fontSize="small"/>
+                    My account
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                        <Logout fontSize="small"/>
                     Logout
                 </MenuItem>
             </Menu>
