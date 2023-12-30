@@ -26,3 +26,8 @@ export const ContainedButton = styled(Button).attrs(() => ({
   min-width: 0;
   text-transform: capitalize !important;
 `;
+
+export const PrimaryButton = styled(ContainedButton)`
+   background-color: ${({ theme }) => theme.palette.blue[7]} !important;
+   padding: .5rem 3rem !important;
+`

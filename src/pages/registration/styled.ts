@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import img from '../../assets/login-bg.jpeg'
+import mobilBg from '../../assets/mobil-bg.jpeg'
 
 
 export const Container = styled.div`
@@ -13,6 +14,10 @@ export const Container = styled.div`
    @media screen and (${({ theme }) => theme.breakpoints.sm}) {
       box-shadow: none;
       margin: 0;
+      background-image: url(${mobilBg});
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 0 1rem;
    }
 
 `
@@ -37,7 +42,7 @@ export const FieldContainer = styled.div`
    padding: 4rem 5rem 2rem 4rem;
    @media screen and (${({ theme }) => theme.breakpoints.sm}) {
       width: 100%;
-      padding: 2rem 1rem;
+      padding: 1rem 0;
    }
 `
 

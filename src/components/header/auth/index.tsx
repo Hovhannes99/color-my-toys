@@ -17,7 +17,7 @@ const RegistrationNav  = () =>{
                     $isActive={pathname === '/auth/sign-in'}
                     onClick={() => navigate("/auth/sign-in")}
                 >
-                    Login
+                    Sign In
                 </RegisterButton>
                 <RegisterButton
                     $isActive={pathname === '/auth/sign-up' || pathname !== '/auth/sign-in'}
