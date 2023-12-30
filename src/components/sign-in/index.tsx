@@ -6,7 +6,7 @@
 
 const SignIn = () =>{
     return (
-        <div>sign in</div>
+        <div>sign In  </div>
     )
 
 }
