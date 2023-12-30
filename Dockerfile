@@ -10,7 +10,8 @@ FROM ubuntu
 RUN apt-get update
 RUN apt-get install nginx -y
 COPY --from=build /app/dist /var/www/html/
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx-rout /etc/nginx/sites-available/
+RUN ln -s /etc/nginx/sites-available/nginx-rout /etc/nginx/sites-enabled/
 
 EXPOSE 80
 
