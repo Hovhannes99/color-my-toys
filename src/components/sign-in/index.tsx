@@ -1,12 +1,11 @@
-
-
-
-
+import {Container, Label} from "./styled.ts";
 
 
 const SignIn = () =>{
     return (
-        <div>sign In  </div>
+        <Container>
+           <Label>Sign In</Label>
+       </Container>
     )
 
 }

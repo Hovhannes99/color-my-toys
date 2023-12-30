@@ -76,7 +76,7 @@ const MenuNav = () =>{
                         </MenuItem>
                     )
                 })}
-                {isAuth ? <>
+                {!isAuth ? <>
                     <MenuItem onClick={() => handleClose('auth/sign-in')} $isActive={pathname === 'auth/sign-in'}>
                         Login
                     </MenuItem>
