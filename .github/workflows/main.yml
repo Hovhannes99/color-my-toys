@@ -30,4 +30,3 @@ jobs:
           docker rmi color-my-toys-front-end-image || true
           docker build --no-cache -t color-my-toys-front-end-image .
           docker run -d -p 5050:80 --name color-my-toys-front-end-container color-my-toys-front-end-image
-          docker exec -i color-my-toys-front-end-container nginx -s reload
