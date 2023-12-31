@@ -23,7 +23,7 @@ const About = () => {
                         })
                     }
                     <Text><span>Directed by: </span>Julian Francis Parker</Text>
-                    <Text><span>Mail: </span>Julianfrancisparker@gmail.com</Text>
+                    <Text><span>Mail: </span><a href="mailto:julianfrancisparker@gmail.com">Julianfrancisparker@gmail.com</a></Text>
                 </DesktopWrapper>
             </LeftPart>
             <RightPart>
@@ -35,7 +35,7 @@ const About = () => {
                         })
                     }
                     <Text><span>Directed by: </span>Julian Francis Parker</Text>
-                    <Text><span>Mail: </span>Julianfrancisparker@gmail.com</Text>
+                    <Text><span>Mail: </span><a href="mailto:julianfrancisparker@gmail.com">Julianfrancisparker@gmail.com</a></Text>
                     <img src={lego} width={183} height={183} alt={'logo'}/>
                 </MobileWrapper>
             </RightPart>

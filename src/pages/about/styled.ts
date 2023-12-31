@@ -55,6 +55,10 @@ export const Text = styled.p`
   > span {
     color: ${({ theme }) => theme.palette.blue[9]};
   }
+  > a {
+    color: white;
+    text-decoration: underline;
+  }
   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
     padding-right:0
   }

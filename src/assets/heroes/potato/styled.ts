@@ -11,6 +11,7 @@ export const Container = styled.div`
 `
 export const Message = styled.div`
   position: relative;
+  z-index: 2;
   left: 50%;
   top: 10%;
   width: 235px;

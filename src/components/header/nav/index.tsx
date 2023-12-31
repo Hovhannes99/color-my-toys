@@ -4,7 +4,6 @@ import RegistrationNav from "@/components/header/auth";
 
 const Nav = () => {
     const {pathname} = useLocation();
-    console.log(pathname, 'pathname')
 
     return (
         <NavContainer>
