@@ -13,7 +13,6 @@ export const MenuItem = styled(MItem)<ButtonType>`
   align-items: center;
   column-gap: 0.5rem;
   ${({ $isActive }) => {
-      console.log($isActive, '$isActive')
       if($isActive){
         return css`
           background: ${({theme}) => (theme.palette.positive[8])}  !important;

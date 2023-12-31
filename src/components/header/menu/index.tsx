@@ -17,14 +17,9 @@ const menu = [
     },
     {
         name: 'About Us',
-        path: '/about-us',
+        path: '/about',
 
     },
-    {
-        name: 'Contact',
-        path: '/contact',
-
-    }
 ]
 const MenuNav = () =>{
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -69,7 +64,6 @@ const MenuNav = () =>{
                 anchorOrigin={{horizontal: "right", vertical: "bottom"}}
             >
                 {menu.map((item)=>{
-                    console.log(pathname === item.path )
                     return (
                         <MenuItem onClick={()=> handleClose(item.path)} key={item.name} $isActive={pathname === item.path}>
                                 {item.name}
@@ -80,7 +74,7 @@ const MenuNav = () =>{
                     <MenuItem onClick={() => handleClose('auth/sign-in')} $isActive={pathname === 'auth/sign-in'}>
                         Sign In
                     </MenuItem>
-                    <MenuItem onClick={() => handleClose('auth/sing-up')} $isActive={pathname === 'auth/sing-up'}>
+                    <MenuItem onClick={() => handleClose('auth/sign-up')} $isActive={pathname === 'auth/sign-up'}>
                         Sign Up
                     </MenuItem>
                 </> :

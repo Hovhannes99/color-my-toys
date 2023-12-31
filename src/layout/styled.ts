@@ -9,8 +9,4 @@ export const Container = styled.div`
 `
 
 export const ChildrenContainer = styled.div`
-   padding: 0 11rem;
-  @media screen and (${({ theme }) => theme.breakpoints.sm}) {
-       padding: 0;
-  }
 `

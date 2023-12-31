@@ -3,6 +3,12 @@ import img from '../../assets/login-bg.jpeg'
 import mobilBg from '../../assets/mobil-bg.jpeg'
 
 
+export const ChildrenContainer = styled.div`
+   padding: 0 11rem;
+   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
+      padding: 0;
+   }
+`
 export const Container = styled.div`
    width: 100%;
    display: flex;
