@@ -43,12 +43,26 @@ export const ForgotPassWrapper = styled.div`
 `
 export const GoogleWrapper = styled.div`
   display: flex;
-  column-gap: .5rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
+  justify-content: space-between;
   > p {
     color:${({ theme }) => theme.palette.neutral[5]}
   }
+`
+
+export const Subtitle = styled.p`
+  text-align: center;
+  ${({ theme }) => theme.customTypography.medium[14]};
+  padding-top: 1.5rem;
+  @media screen and (${({ theme }) => theme.breakpoints.sm}) {
+    ${({ theme }) => theme.customTypography.semibold[10]};
+    padding-top: 1rem ;
+  }
+`
+
+export const Wrapper = styled.div`
+   display: flex;
 `
 
 export const ButtonWrapper = styled.div`

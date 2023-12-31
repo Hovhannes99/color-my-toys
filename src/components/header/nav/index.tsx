@@ -4,7 +4,7 @@ import RegistrationNav from "@/components/header/auth";
 
 const Nav = () => {
     const {pathname} = useLocation();
-
+    console.log(pathname, 'pathname')
 
     return (
         <NavContainer>
@@ -20,13 +20,6 @@ const Nav = () => {
                     $isActive={pathname === '/about'}
                 >
                     About Us
-                </NavLink>
-                <NavLink
-                    to="/contact"
-                    $isActive={pathname === '/contact'}
-
-                >
-                    Contact
                 </NavLink>
             </NavWrapper>
             <RegistrationNav/>

@@ -7,6 +7,7 @@ import {
   formHelperTextClasses,
 } from '@mui/material';
 import styled, { css } from 'styled-components';
+import OtpInput from 'react18-input-otp';
 
 export const Input = styled(TextField).attrs(() => ({
   variant: 'outlined',
@@ -58,6 +59,9 @@ export const Input = styled(TextField).attrs(() => ({
   }
 `;
 
+export const VerifyInput = styled(OtpInput).attrs(() => ({
+}))``;
+
 export const InputWrapper = styled.div`
    display: flex;
    flex-flow: column;
@@ -65,7 +69,8 @@ export const InputWrapper = styled.div`
 export const  InputLabel = styled.p`
   font-size: 15px;
   padding-bottom: 10px;
+  padding-left: .5rem;
   font-weight: 600;
   color:${({ theme }) => theme.palette.neutral[6]};
-
+  cursor: pointer;
 `

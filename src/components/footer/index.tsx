@@ -13,7 +13,7 @@ const Footer = () => {
           <TextWrapper>
               {privacyData.map((text)=>{
                   return (
-                      <Subtitles>{text}</Subtitles>
+                      <Subtitles key={text}>{text}</Subtitles>
                   )
               })}
           </TextWrapper>
@@ -21,7 +21,7 @@ const Footer = () => {
           <TextWrapper>
               {categoriesData.map((text)=>{
                   return (
-                      <Subtitles>{text}</Subtitles>
+                      <Subtitles key={text}>{text}</Subtitles>
                   )
               })}
           </TextWrapper>

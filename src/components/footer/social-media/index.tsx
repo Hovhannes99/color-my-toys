@@ -30,8 +30,8 @@ const socialMediaData = [
 const SocialMedia = () =>{
     return (
         <Container>
-            {socialMediaData.map((media)=><ButtonIcon>
-                <a href={media.link} target={"_blank"}>
+            {socialMediaData.map((media)=><ButtonIcon key={media.link}>
+                <a href={media.link} target={"_blank"} >
                     <img width={17} height={17} src={media.icon} alt="media"/>
                 </a>
             </ButtonIcon>)}

@@ -5,7 +5,7 @@ export default createGlobalStyle`
     height: 100%;
     background-color: #FFFFFF;
     color: #000000;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.016rem;
     font-family: 'Inter',serif;
   }
@@ -30,17 +30,17 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar {
-    height: 1rem;
-    width: 1rem;
+    height: .7rem;
+    width: .7rem;
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #FF97AE;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,0.1);
-    border: 0.1rem solid #29313E;
+    background-color: #FFDF8A;
+    border: transparent;
     border-radius: 0.5rem;
   }
   

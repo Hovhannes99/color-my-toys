@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import loader from '@/assets/loader.svg';
-
+import CircularProgress from '@mui/material/CircularProgress';
 type ContainerProps = {
   $small?: boolean;
 };
@@ -11,8 +10,7 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  row-gap: 1rem;
 `;
 
-export const LoaderIcon = styled.img.attrs(() => ({
-  src: loader,
-}))``
+export const LoaderIcon = styled(CircularProgress)``
