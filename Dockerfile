@@ -4,6 +4,8 @@ WORKDIR /app
 COPY . /app
 
 RUN npm install
+RUN rm /etc/nginx/sites-enabled/default
+RUN rm /etc/nginx/sites-available/default
 RUN npm run build
 
 FROM ubuntu
