@@ -1,13 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle` 
+export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap');
+  
   html, body, #root {
     height: 100%;
     background-color: #FFFFFF;
     color: #000000;
-    font-weight: 600;
     letter-spacing: 0.016rem;
-    font-family: 'Inter',serif;
+  }
+  .inter {
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: inter;
+    src: url("../public/Inter-Regular.ttf");
   }
 
 
