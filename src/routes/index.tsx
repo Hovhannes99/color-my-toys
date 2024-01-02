@@ -9,13 +9,14 @@ const ForgotPassword = lazy(() => import('@/components/auth/forgot-password'));
 const SetPassword = lazy(() => import('@/components/auth/set-password'));
 const VerifyCode = lazy(() => import('@/components/auth/verify'));
 const About = lazy(() => import('@/pages/about'));
+const Home = lazy(() => import('@/pages/home'));
 
 
 const Routes = () => {
     return (
         <Suspense fallback={<Loader/>}>
             <RouterRoutes>
-                <Route path='/' element={<div>Home</div>}/>
+                <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/auth' element={<Registration/>}>
                     <Route path='sign-in' element={<SignIn/>}/>

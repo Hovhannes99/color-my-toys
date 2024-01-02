@@ -1,6 +1,6 @@
 import {Container, DesktopWrapper, LeftPart, MobileWrapper, RightPart, SubTitle, Text, Title} from "./styled.ts";
 import Potato from "@/assets/heroes/potato";
-import lego from "@/assets/heroes/potato/lego.png"
+import lego from "@/assets/heroes/potato/lego-pure.svg"
 
 const texts = [
     "At Color My Toys, we believe in the magic of creativity and the joy it brings to little hearts and minds. Our unique platform caters to parents, educators, and anyone looking to spark a child's imagination through the joy of coloring.",

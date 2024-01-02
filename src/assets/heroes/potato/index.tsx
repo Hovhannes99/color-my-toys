@@ -1,6 +1,6 @@
 import {BgColor, Container, Image, LegoImage, Message} from "./styled.ts";
 import potato from "./potato.png"
-import lego from "./lego.png"
+import lego from "./lego-pure.svg"
 
 const Potato = () => {
     return (
