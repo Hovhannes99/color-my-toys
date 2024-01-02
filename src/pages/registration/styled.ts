@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import img from '../../assets/login-bg.svg'
-import mobilBg from '../../assets/mobil-bg.jpeg'
+import img from '../../assets/bg-auth.png'
+import mobilBg from '../../assets/mobile-bg.png'
 
 
 export const ChildrenContainer = styled.div`
@@ -36,6 +36,7 @@ export const LogoContainer = styled.div`
     align-items: center;
     background-repeat: no-repeat;
     background-image: url(${img});
+    background-size: 100% 100%;
     padding: 1rem 3rem;
    @media screen and (${({ theme }) => theme.breakpoints.sm}) {
       display: none;
