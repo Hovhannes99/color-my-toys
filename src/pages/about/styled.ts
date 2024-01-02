@@ -53,7 +53,7 @@ export const Text = styled.p`
   padding-bottom: 1rem;
   padding-right: 10rem;
   > span {
-    color: ${({ theme }) => theme.palette.blue[9]};
+    color: ${({ theme }) => theme.palette.blue[11]};
   }
   > a {
     color: white;

@@ -30,5 +30,5 @@ export const ContainedButton = styled(Button).attrs(() => ({
 export const PrimaryButton = styled(ContainedButton)`
    background-color: ${({ theme }) => theme.palette.blue[7]} !important;
    padding: .5rem 3rem !important;
-   font-weight: 600;
+   font-weight: 600 !important;
 `

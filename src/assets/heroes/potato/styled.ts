@@ -24,7 +24,7 @@ export const Message = styled.div`
   padding-top: 4rem;
   text-align: center;
   font-weight: 700;
-  color: ${({ theme }) => theme.palette.blue[9]};
+  color: ${({ theme }) => theme.palette.blue[11]};
   font-size: 28px;
   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
     width: 100px;

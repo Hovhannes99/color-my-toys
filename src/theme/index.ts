@@ -120,7 +120,9 @@ export const styledTheme: DefaultTheme = {
       6: '#2488D0',
       7: '#22B1DB',
       8: '#3958FF',
-      9: '#213188',
+      9: '#145CE6',
+      10: '#3A61A6',
+      11: '#213188'
     },
   },
   transition: ['all 0.3s ease 0s'],
