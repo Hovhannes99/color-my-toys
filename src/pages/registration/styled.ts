@@ -5,6 +5,9 @@ import mobilBg from '../../assets/mobile-bg.png'
 
 export const ChildrenContainer = styled.div`
    padding: 0 11rem;
+   @media screen and (${({ theme }) => theme.breakpoints.md}) {
+      padding: 0 3rem;
+   }
    @media screen and (${({ theme }) => theme.breakpoints.sm}) {
       padding: 0;
    }
@@ -46,6 +49,9 @@ export const LogoContainer = styled.div`
 export const FieldContainer = styled.div`
    width: 50%;
    padding: 4rem 5rem 2rem 4rem;
+   @media screen and (${({ theme }) => theme.breakpoints.md}) {
+      padding: 2rem 1rem 2rem 1rem;
+   }
    @media screen and (${({ theme }) => theme.breakpoints.sm}) {
       width: 100%;
       padding: 1rem 0;
@@ -54,6 +60,9 @@ export const FieldContainer = styled.div`
 
 export const LogoWrapper = styled.div`
   padding: 10rem 0;
+   @media screen and (${({ theme }) => theme.breakpoints.md}) {
+      padding: 1rem
+   }
 `
 
 export const Label = styled.p`

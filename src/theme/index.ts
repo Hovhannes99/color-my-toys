@@ -54,7 +54,7 @@ export const styledTheme: DefaultTheme = {
   breakpoints: {
     sm: '(max-width: 750px)',
     smMin: '(min-width: 750px)',
-    md: '(min-width: 0px)',
+    md: '(max-width: 1200px)',
     lg: '(min-width: 1920px)',
   },
   palette: {

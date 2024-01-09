@@ -139,6 +139,24 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .svg-wrapper{
+        width: 350px;
+        height: 467px;
+    }
+    .picture{
+        height: 362px;
+        position: absolute;
+        left: 70px;
+    }
+    .really-picture{
+        height: 370px;
+        position: absolute;
+        left: 0;
+    }
+
+}
+
 @media screen and (max-width: 750px) {
    .svg-wrapper{
        width: 295px;
@@ -155,13 +173,13 @@
         left: 10%;
     }
     .picture{
-        height: 340px;
+        height: 312px;
         position: absolute;
-        left: 50px;
+        left: 27px;
     }
     .really-picture{
-        height: 340px;
+        height: 303px;
         position: absolute;
-        left: 0;
+        left: -25px;
     }
 }

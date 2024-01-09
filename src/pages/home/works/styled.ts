@@ -1,13 +1,10 @@
 import styled from "styled-components"
 import {PrimaryButton} from "@/kit/buttons/styled.ts";
+import {MainContainer} from "@/kit/container/styled.ts";
 
 
 
-export const Container = styled.div`
-  padding: 5rem 15rem;
-  @media screen and (${({ theme }) => theme.breakpoints.sm}) {
-    padding: 2rem 1rem;
-  }
+export const Container = styled(MainContainer)`
 `
 
 export const Title = styled.p`

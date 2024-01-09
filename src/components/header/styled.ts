@@ -6,6 +6,9 @@ export const Container = styled.div`
    padding: 2.3rem 10rem;
    background-color: ${({ theme }) => theme.palette.neutral[2]};
    position: relative;
+  @media screen and (${({ theme }) => theme.breakpoints.md}) {
+    padding: 2.3rem 3rem;
+  }
   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
     padding: 2rem 1rem .8rem 0;
     display: flex;

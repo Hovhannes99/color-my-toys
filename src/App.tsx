@@ -6,14 +6,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+
 function App() {
     return (
-        <BrowserRouter>
-            <Layout>
-              <Routes/>
-            </Layout>
-        </BrowserRouter>
-
+            <BrowserRouter>
+                <Layout>
+                    <Routes/>
+                </Layout>
+            </BrowserRouter>
     )
 }
 
