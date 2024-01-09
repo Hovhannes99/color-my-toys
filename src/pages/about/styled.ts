@@ -1,15 +1,14 @@
 import styled from 'styled-components'
+import {MainContainer} from "@/kit/container/styled.ts";
 
 
 
 
-export const Container = styled.div`
+export const Container = styled(MainContainer)`
    display: flex;
-   padding: 8rem 11rem;
    background-color: ${({ theme }) => theme.palette.blue[8]};
   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
     flex-flow: column;
-    padding: 1rem .5rem;
   }
 `
 

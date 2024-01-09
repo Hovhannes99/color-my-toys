@@ -40,6 +40,9 @@ export const RightWrapper = styled.div`
 export const LeftWrapper = styled.div`
     width: 100%;
     padding: 5rem 0 0 10rem ;
+    @media screen and (${({ theme }) => theme.breakpoints.md}) {
+      padding: 2rem 0 0 4rem ;
+    }
   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
      padding: 0 2rem;
   }
@@ -49,6 +52,10 @@ export const UploadButton = styled(PrimaryButton)`
   border-radius: 32px !important;
   padding: 1rem 2rem !important;
   margin-top: 9rem !important;
+  @media screen and (${({ theme }) => theme.breakpoints.md}) {
+    margin-top: 2rem !important;
+    margin-bottom: .5rem !important;
+  }
   @media screen and (${({ theme }) => theme.breakpoints.sm}) {
     display: none !important;
   }

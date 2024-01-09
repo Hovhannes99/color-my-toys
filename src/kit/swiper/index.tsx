@@ -1,6 +1,5 @@
 import {ReactNode} from "react";
 import { Swiper } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 
 
 const SwipeFeedback = ({children}:{children:ReactNode}) => {
@@ -13,28 +12,44 @@ const SwipeFeedback = ({children}:{children:ReactNode}) => {
                 dynamicBullets: false,
             }}
             breakpoints={{
-                600: {
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                400: {
                     slidesPerView: 1.5,
-                    spaceBetween: 10,
+                    spaceBetween: 50,
+                },
+                550: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 50,
+                },
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 100,
                 },
                 800: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
+                    slidesPerView: 2.5,
+                    spaceBetween: 100,
                 },
-                1200: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
+                1100: {
+                    slidesPerView: 3,
+                    spaceBetween: 100,
+                },
+                1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
                 },
                 1440: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 20,
+                    slidesPerView: 4,
+                    spaceBetween: 50,
                 },
                 1500: {
-                    slidesPerView: 3.2,
-                    spaceBetween: 40,
+                    slidesPerView: 5.2,
+                    spaceBetween: 100,
                 },
             }}
-            modules={[Pagination]}
+            autoplay={true}
             className="feedback-swipe"
         >
             {children}

@@ -1,14 +1,11 @@
 import styled from "styled-components";
+import {MainContainer} from "@/kit/container/styled.ts";
 
 
 
 
-export const Container = styled.div`
-   padding: 5rem 15rem;
+export const Container = styled(MainContainer)`
    background-color: ${({ theme }) => theme.palette.blue[10]} ;
-  @media screen and (${({ theme }) => theme.breakpoints.sm}) {
-    padding: 2rem 1rem;
-  }
   .video{
       width: 100%;
       height: 100%;
